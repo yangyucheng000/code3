@@ -1,0 +1,8 @@
+.vscode/
+.torch/
+*/__pycache__/
+*/build/
+*.pyc
+build/
+*.so
+examples

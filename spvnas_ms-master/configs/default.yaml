@@ -1,0 +1,6 @@
+workers_per_gpu: 8
+n_gpus: 1
+gpu: [1]
+device_target: "GPU"
+#distributed: True
+#amp_enabled: True
