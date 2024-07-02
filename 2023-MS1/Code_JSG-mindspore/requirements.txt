@@ -1,0 +1,7 @@
+python==3.9.18
+easydict==1.9
+h5py==3.1.0
+mindspore==2.2.0
+numpy==1.22.3
+tqdm==4.65.0
+cudatoolkit==11.1.1

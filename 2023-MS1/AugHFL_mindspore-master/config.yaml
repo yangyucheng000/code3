@@ -1,0 +1,26 @@
+n_participants: 4
+corruption_type: random_noise # ['clean','random_noise']
+corruption_rate: 1 #[0, 0.5, 1]
+test_corruption_type: random_noise # ['clean','random_noise']
+test_corruption_rate: 1 #[0, 1]
+
+pretrain:
+    train_batch_size: 256
+    test_batch_size: 512
+    pretrain_epoch: 40
+    private_data_len: 10000
+    pariticpant_params:
+        loss_funnction: CE
+        optimizer_name: Adam
+        learning_rate: 0.001
+
+aughfl:
+    train_batch_size: 256
+    test_batch_size: 512
+    communication_epoch: 40
+    private_data_len: 10000
+    public_dataset_length: 5000
+    pariticpant_params:
+        loss_funnction: CE
+        optimizer_name: Adam
+        learning_rate: 0.001

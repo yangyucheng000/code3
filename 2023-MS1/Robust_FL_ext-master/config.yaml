@@ -1,0 +1,24 @@
+n_participants: 4
+noise_type: pairflip # ['pairflip','symmetric',None]
+noise_rate: 0.1
+
+pretrain:
+    train_batch_size: 1024
+    test_batch_size: 512
+    pretrain_epoch: 80
+    private_data_len: 50000
+    pariticpant_params:
+        loss_funnction: SCE
+        optimizer_name: Adam
+        learning_rate: 0.001
+
+rhfl:
+    train_batch_size: 512
+    test_batch_size: 512
+    communication_epoch: 40
+    private_data_len: 10000
+    public_dataset_length: 5000
+    pariticpant_params:
+        loss_funnction: SCE
+        optimizer_name: Adam
+        learning_rate: 0.002
